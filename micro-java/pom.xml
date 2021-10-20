@@ -18,7 +18,7 @@
       resources, i.e. build is platform dependent! -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <failOnMissingWebXml>false</failOnMissingWebXml>
-
+    <jkube.build.switchToDeploment>true</jkube.build.switchToDeplpoyment>
     <!-- Thorntail dependency versions -->
     <version.thorntail>2.4.0.Final</version.thorntail>
 
@@ -91,6 +91,12 @@
         </executions>
       </plugin>
     </plugins>
+    <!-- JKube Maven Plugin -->
+    <plugin>
+      <groupId>org.eclipse.jkube</groupId>
+      <artifactId>openshift</artifactId>
+      <version>1.2</version>
+    </plugin>
   </build>
 
 </project>
