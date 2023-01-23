@@ -1,3 +1,3 @@
 <?php
-print "Build hooks application \n";
+print "BBBuild hooks application \n";
 ?>
